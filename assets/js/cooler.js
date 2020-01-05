@@ -15,8 +15,7 @@ let Cooler = {
 
 			channel.push('shout', {name: userName, body: userMsg})
 
-			document.getElementById(user-name).value = ''
-			document.getElementById(user-msg).value = ''
+			document.getElementById('user-msg').value = ''
 		})
 
 		channel.on('shout', payload => {
