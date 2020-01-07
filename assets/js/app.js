@@ -17,5 +17,7 @@ import "phoenix_html"
 // import socket from "./socket"
 import socket from "./socket"
 import Cooler from "./cooler"
+import Talk from "./talk"
 
+Talk.init(socket)
 Cooler.init(socket)

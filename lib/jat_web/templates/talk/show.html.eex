@@ -1,1 +1,16 @@
-<h2>Room: <%=	@room %>	</h2>
+<%# TALK > SHOW.HTML.EEX %>
+<h2>Room: <%=	@room %> </h2>
+
+<%# changed from "chat" to "talk" %>
+<div id="talk-box">
+
+</div>
+<%= form_for @conn, "#", [id: "talk-form"], fn f -> %>
+<%= text_input f, :username, placeholder: "Username", id: "talk-user-name" %>
+<br>
+<%= textarea f, :message, placeholder: "Your comment", id: "talk-user-msg" %>
+<br>
+<%= submit "Post" %>
+<% end %>
+
+

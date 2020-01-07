@@ -102,6 +102,33 @@ table, th, td {
 
 }
 
+#talk-box {
+  border: 1px #000 solid;
+  padding: 0 0 0 5px;
+  min-height: 157px;
+  max-height: 225px;
+  overflow: scroll;
+}
+
+#talk-form {
+  width:250px;
+}
+
+#talk-form input[type="text"] {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+#talk-form textarea {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+
+}
+
 .nav-header {
   position: relative;
   width: 100%;

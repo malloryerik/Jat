@@ -5,6 +5,11 @@ defmodule JatWeb.TalkController do
     render(conn, "show.html", room: roomid)
   end
 
+  # def index(conn, _params) do
+  #   text_list = Jat.Talks.list_texts()
+  #   render conn, "index.html", texts: text_list
+  # end
+
 end
 
 # https://hexdocs.pm/phoenix/routing.html#resources
