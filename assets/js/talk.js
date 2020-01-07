@@ -35,8 +35,3 @@ let Talk = {
 }
 	
 export default Talk
-
-
-// <%= for text <- @texts do %>
-// 	<p><b> <%= text.name %>:</b> <%= text.message %> </p>
-//  <% end %>

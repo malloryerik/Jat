@@ -17,6 +17,14 @@ defmodule Jat.Talks do
       [%Text{}, ...]
 
   """
+ def list_texts_by_room(room) do
+   qry = from t in Text,
+         where: t.room == ^room,
+         order_by: [asc: t.inserted_at]
+   Repo.all(qry)
+ end
+
+
   def list_texts do
     Repo.all(Text)
   end

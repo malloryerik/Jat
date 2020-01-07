@@ -1,8 +1,11 @@
 defmodule JatWeb.TalkController do
   use JatWeb, :controller
 
-  def show(conn, %{"id" => roomid}) do
-    render(conn, "show.html", room: roomid)
+  alias Jat.Talks
+
+  def show(conn, %{"id" => room}) do
+    texts = Talks.list_texts_by_room(room)
+    render(conn, "show.html", room: room, texts: texts)
   end
 
   # def index(conn, _params) do

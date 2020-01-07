@@ -3,7 +3,9 @@
 
 <%# changed from "chat" to "talk" %>
 <div id="talk-box">
-
+	<%= for txt <- @texts do %>
+	<p><b> <%= txt.name %>:</b> <%= txt.body %> </p>
+	<% end %>
 </div>
 <%= form_for @conn, "#", [id: "talk-form"], fn f -> %>
 <%= text_input f, :username, placeholder: "Username", id: "talk-user-name" %>
@@ -12,5 +14,3 @@
 <br>
 <%= submit "Post" %>
 <% end %>
-
-
