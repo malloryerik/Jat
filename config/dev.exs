@@ -52,7 +52,10 @@ config :jat, JatWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/jat_web/views/.*(ex)$},
-      ~r{lib/jat_web/templates/.*(eex)$}
+      ~r{lib/jat_web/templates/.*(eex)$},
+      ~r{lib/jat_web/controllers/.*(ex)$},
+      ~r{lib/jat_web/templates/.*(eex)$},
+      ~r{lib/jat_web/router/.*(eex)$},
     ]
   ]
 

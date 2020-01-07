@@ -16,6 +16,7 @@ defmodule JatWeb.Router do
   scope "/", JatWeb do
     pipe_through :browser
 
+    resources "/talk", TalkController, only: [:show]
     get "/", PageController, :index
   end
 
