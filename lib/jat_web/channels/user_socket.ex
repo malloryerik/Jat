@@ -3,6 +3,7 @@ defmodule JatWeb.UserSocket do
 
   ## Channels
   channel "cooler:*", JatWeb.CoolerChannel
+  channel "talk:*", JatWeb.CoolerChannel
   # channel "room:*", JatWeb.RoomChannel
 
   # Socket params are passed from the client and can
